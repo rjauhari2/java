@@ -3,3 +3,5 @@ build --experimental_ui_max_stdouterr_bytes=-1
 # We don't need this cache, since we are not building TF from GitHub Actions anymore. Just keeping this here for reference
 # build --remote_cache=https://storage.googleapis.com/tensorflow-sigs-jvm
 # build --remote_upload_local_results=false
+
+startup --host_jvm_args=-Djavax.net.ssl.trustStore=/tools/batonroot/rodin/devkits/lnx64/jdk-11.0.11_9/lib/security/cacerts --host_jvm_args=-Djavax.net.ssl.trustStorePassword=changeit
